@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+    <title>Mi primera pagina</title>
+    <style>
+        html, body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+        }
+
+        body {
+            margin: 0;
+            background: #FAD7A0 ;
+            color: #000000;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        #header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #main-content-container {
+            display: flex;
+        }
+
+        #links-sidebar {
+            flex: 2;
+            background: #E67E22
+        }
+
+        #main-content {
+            flex: 6;
+            padding: 10px 20% 10px 10px;
+        }
+
+        .main-content__img--full-width {
+            width: 100%;
+        }
+
+        #footer {
+            padding: 0 20px 20px 20px;
+            margin-top: auto;
+            display: flex;
+            background: #f3f3f3;
+        }
+
+        .footer__section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .social__networks {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .social__network {
+            display: flex;
+            align-items: center;
+        }
+
+        .social__icon {
+            font-size: 32px;
+        }
+
+        .social__icon-handler {
+            margin-left: 10px;
+        }
+
+        input[type=email], textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            transition: 0.5s;
+            outline: none;
+        }
+
+        input[type=email]:focus, textarea:focus {
+            border: 3px solid #555;
+        }
+
+        input[type=submit] {
+            background: #666655;
+            border: 1px;
+            color: #F6DDCC;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+    </style>
+</head>
+<body>
+<header id="header">
+    <h1> UNIVERSIDAD DE GUADALAJARA </h1>
+    <h1>CUCEI</h1>
+    <h2>OLIMPIADAS DE AJEDREZ</h2>
+    <section>
+        <img src="Escudo_CUCEI.svg.png" width="200" height="200"> 
+    </section>
+    
+</header>
+
+    
+<nav id="navigation-bar">
+    <b>MENU</b>
+</nav>
+
+<div id="main-content-container">
+    <aside id="links-sidebar">
+        <p>
+    
+        <b>Información</b>
+    </p>
+        <p>Aprender agedrez fomenta la concentración. Es algo muy importante para su desempeño académico y que les ayudará a evitar distracciones e interrupciones en el estudio, al ser capaces de poner el foco en una única tarea. Ayuda al desarrollo del pensamiento crítico. </p>
+        <img src="cerebroicon.png" width="100" height="100"> 
+        
+    </aside>
+    <section id="main-content">
+        <img src="ajedrez.jpg" alt="Ajedrez" class="main-content__img--full-width">
+
+        <h2 >Disciplina</h2>
+
+        <p align="margin-left">EL CUCEI fomenta la organización de equipos y torneos de carácter deportivo. 
+            En el CUCEI puedes participar en equipos ajedrez.</p>
+        <p align="margin-left">Gracias a la ubicación privilegiada del CUCEI, se puede tener acceso a las instalaciones deportivas que se encuentran junto al centro universitario. Dichas instalaciones no pertenecen propiamente al centro universitario; pero por su carácter universitario, todos los integrantes del CUCEI pueden utilizarlas cubriendo los requisitos correspondientes..</p>
+
+        <h2 >Modo de trabajo y ubicación</h2>
+        <p align="margin-left">La organización de las actividades deportivas en el CUCEI se realiza a través del módulo de Actividades Deportivas de la Coordinación de Extensión, que se encuentra ubicado en el módulo A, planta alta. </p>
+   
+        <h2 >Bases del torneo</h2>
+        <p align="margin-left">1º Están invitados los alumnos de todos los semestres en curso y todos los turnos sin distinción o exclusión alguna para ingresar en el torneo.
+            <p>2º El torneo se realizará con un total de 32 participantes; de existir un registro mayor al establecido, se realizarán rondas preliminares de selección para formar un seleccionado.</p>
+            <p>3º El torneo se regirá con base el reglamento FIDE, bajo el sistema suizo; se llevarán 5 rondas de 30 minutos por encuentro (15 minutos para cada participante).
+            
+                     De efectuarse un empate, se realizará una partida ‘’Muerte súbita’’ de 10 minutos (5 minutos por participante).
+            
+                     En un segundo empate la partida final será modalidad Fischer: 3 minutos por jugador +2; con un empate en esta última ronda el ganador será el jugador que use las piezas negras.</p>
+             
+            
+            4º Se extenderá la invitación para todos los Colegios o cualquier plantel, además de personal administrativo y profesores de los mismos. Además de la asignación de un juez.
+            
+             
+            
+            <p>5º Toda actitud antideportiva por parte de un jugador será motivo de descalificación en el torneo y ser restringido del área de juego.</p>
+            
+             
+            
+            El período de inscripción se abre desde el lanzamiento del presente hasta unos minutos antes del encuentro, si se requiere rondas preliminares se realizarán el día 09 de octubre de 2022. </p>
+   
+    </section>
+</div>
+
+<footer id="footer">
+    <div class="footer__social footer__section">
+        <h2>Mis redes</h2>
+
+        <div class="social__networks">
+            <div class="social__network">
+                <i class="lni lni-google"></i>
+                <span class="social__icon-handler"> <a href="mailto:yareni.delgadillo.garcia@gmail.com"> yareni.delgadillo.garcia@gmail.com </a> </span>
+            </div>
+
+            <div class="social__network">
+                <i class="lni lni-instagram"></i>
+                <span class="social__icon-handler">
+                    <a href="https://www.instagram.com/yareni_delgadillo/"> yareni_delgadillo </a>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+            <form>
+                <label for="contactEmail"> Correo electronico:</label>
+                <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+
+                <label for="contactMessage"> Mensaje:</label>
+                <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="footer__more-sites footer__section">
+        <h2>Otros de mis proyectos</h2>
+        <p>Haga click en el piano </p><a href="index1.html"><img src="PianoIcon.png" width="300" height="300"> </a>
+    
+        
+    </p>
+    </div>
+</footer>
+</body>
+</html>
